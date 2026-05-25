@@ -1,0 +1,19 @@
+name: Deploy Prompt Builder
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Hent koden
+        uses: actions/checkout@v4
+
+      - name: Si hei
+        run: |
+          echo "Hei! GitHub Actions kjører nå 🎉"
+          echo "Repo: PomptSky"
+          echo "Tidspunkt: $(date)"
