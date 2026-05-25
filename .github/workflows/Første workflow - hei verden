@@ -1,0 +1,13 @@
+name: Hei Verden Workflow
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Si hei fra roboten
+        run: echo "Hei! GitHub Actions fungerer! 🎉 Dette er min første workflow."
